@@ -1,33 +1,52 @@
-//////////////////////////////////////////////
- GITHUB GUIDE (b/c Emily is forever clueless)
-//////////////////////////////////////////////
+# GitHub Guide
+(because Emily is forever clueless)
 
-GET COPY OF A REPOSITORY ON GITHUB:
+## Getting a copy of a repository on GitHub
+```
 git clone (url)
+```
 
-PUSH CHANGES:
+## Push changes
+```
 git add (filename)
 git commit -m "This is a message detailing the changes I made"
 git push origin branch
+```
 
-ADD ALL FILES FROM DIRECTORY:
+## Add all files from a directory
+```
 git add * OR git add .
+```
 
-FORCE REMOVE LOCAL FILES & CHECKOUT TO ANOTHER BRANCH:
-git checkout -f another-branch
+## Force remove local files & checkout to another branch
+```
+git checkout -f another-branch-name
+```
 
-UNDO LOCAL CHANGES:
-git checkout -- <bad filename> (overwrites local changes, restoring to old code)
+## Undo local changes
+```
+git checkout -- bad-code-filename
+```
+*overwrites local changes, restoring to old code*
 
-RETRIEVE LATEST COMMITS IN BRANCH: *always do this before committing changes*
+## Retrieve latest commits in branch
+```
 git pull
+```
+*always do this before committing changes*
 
-SEE WHAT FILES HAVE BEEN CHANGED LOCALLY:
+## See what files have been changed locally
+```
 git status
+```
 
-WHEN CAN'T MERGE, JUST STASH:
+## When you can't merge, just stash!
+```
 git stash
+```
 
-FINALLY, WHAT IS ORIGIN:
+## And FINALLY, what the heck is origin?!
+```
 git checkout origin/branch_name = working in local repository
 git checkout branch_name = on actual branch in git
+```
